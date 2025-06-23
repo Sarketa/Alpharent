@@ -11,18 +11,22 @@
 <body>
 
 <header>
-  <nav>
-    <span class="logo">ALPHA rent a car</span>
-    <ul>
+  <nav class="navbar">
+    <div class="logo">ALPHA rent a car</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#services">Usluge</a></li>
       <li><a href="#fleet">Flota vozila</a></li>
       <li><a href="#pricing">Cenovnik usluga</a></li>
-	  <li><a href="#about">O nama</a></li>
+      <li><a href="#about">O nama</a></li>
       <li><a href="#contact">Bukiraj</a></li>
-	  <li><a href="#footer">Kontakt</a></li>
+      <li><a href="#footer">Kontakt</a></li>
     </ul>
   </nav>
 </header>
+
 
 
 <section class="hero" id="hero">
@@ -168,29 +172,27 @@
 
 <section class="section" id="pricing">
   <h2>Cenovnik</h2>
-  <div class="pricing">
- <table class="horizontal-price-table">
-  <thead>
-    <tr>
-      <th>Broj dana</th>
-      <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
-      <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
-      <th>11</th><th>12</th><th>13</th><th>14</th><th>15-20</th>
-      <th>21-25</th><th>26-30</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Cena po danu</td>
-      <td>38 €</td><td>33 €</td><td>30 €</td><td>28 €</td><td>27 €</td>
-      <td>25 €</td><td>23 €</td><td>21 €</td><td>20 €</td><td>19 €</td>
-      <td>18 €</td><td>17 €</td><td>16 €</td><td>15 €</td><td>14 €</td>
-      <td>13 €</td><td>12 €</td>
-    </tr>
-  </tbody>
-</table>
-
-
+  <div class="pricing table-responsive">
+		 <table class="horizontal-price-table">
+		  <thead>
+			<tr>
+			  <th>Broj dana</th>
+			  <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+			  <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+			  <th>11</th><th>12</th><th>13</th><th>14</th><th>15-20</th>
+			  <th>21-25</th><th>26-30</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td>Cena po danu</td>
+			  <td>38 €</td><td>33 €</td><td>30 €</td><td>28 €</td><td>27 €</td>
+			  <td>25 €</td><td>23 €</td><td>21 €</td><td>20 €</td><td>19 €</td>
+			  <td>18 €</td><td>17 €</td><td>16 €</td><td>15 €</td><td>14 €</td>
+			  <td>13 €</td><td>12 €</td>
+			</tr>
+		  </tbody>
+		</table>
   </div>
 </section>
 
@@ -202,7 +204,7 @@
   <input id="email" type="email" placeholder="Email adresa	" required />
   <label for="date">Period bukiranja</label>
   <input id="date" type="date" required />
-   <label for="sati">Vreme preuzimanja</label>
+  <label for="sati">Vreme preuzimanja</label>
   <input id="sati" type="date" required />
   <label for="car">Izaberite vozilo koje zelite</label>
   <select id="car" required="required">

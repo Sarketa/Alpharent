@@ -64,3 +64,9 @@ function closeModal() {
   document.getElementById("thankyou-modal").style.display = "none";
 }*/
 
+/*Header toggle*/
+  document.getElementById("menu-toggle").addEventListener("click", function () {
+    document.getElementById("nav-links").classList.toggle("active");
+  });
+
+
